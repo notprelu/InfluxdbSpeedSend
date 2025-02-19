@@ -7,9 +7,9 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 
 file_path = "speedtest_results.json"
 url = "http://localhost:8086"
-token = "uvzFFHlUOK9DPxlVJWWM6K9b5gUXas8LMnxLJaA531Gg5X1xCxHmHq7AMea0U9qP5_7pW0M3-BDIitp1SmeNSA=="
-org = "test"
-bucket = "test"
+token = "fggUfeIQY4r8HVtLQVQFw4lKW18DV53QXEToM6m2p7imQgyytin-J9DPbLhU-7a8r4N_GFO6EwYhdMpmrLrnnQ=="
+org = "Pve"
+bucket = "internetspeed"
 
 def run_speedtest():
     try:
