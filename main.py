@@ -63,4 +63,5 @@ def run_speedtest():
 while True:
     run_speedtest()
     print("Waiting for 30 minutes before next test...")
+    time.sleep(1800)
     
