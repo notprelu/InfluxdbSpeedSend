@@ -6,10 +6,10 @@ from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 file_path = "speedtest_results.json"
-url = "http://localhost:8086"
-token = "<token>"
-org = "<org>"
-bucket = "<bucket>"
+url = os.getenv("INFLUXDB_URL", "http://localhost:8086")
+token = os.getenv("INFLUXDB_TOKEN", "")
+org = os.getenv("INFLUXDB_ORG", "")
+bucket = os.getenv("INFLUXDB_BUCKET", "")
 
 def run_speedtest():
     try:
